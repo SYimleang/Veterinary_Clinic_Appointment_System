@@ -21,9 +21,15 @@
     <ClCompile Include="core.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="clinic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clinic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

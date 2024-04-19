@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 #include "core.h"
 
 //Clear the standard input buffer

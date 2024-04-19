@@ -1,18 +1,19 @@
-void test01_inputInt(void);
-void test02_inputIntPositive(void);
-void test03_inputIntRange(void);
-void test04_inputIntRange(void);
-void test05_inputCharOption(void);
-void test06_inputCString(void);
-void test07_inputCString(void);
-void test08_inputCString(void);
-void test09_displayPhone(void);
+#ifndef CORE_H
+#define CORE_H
+
+//////////////////////////////////////
+// USER INTERFACE FUNCTIONS
+//////////////////////////////////////
 
 // Clear the standard input buffer
 void clearInputBuffer(void);
 
 // Wait for user to input the "enter" key to continue
 void suspend(void);
+
+//////////////////////////////////////
+// USER INPUT FUNCTIONS
+//////////////////////////////////////
 
 // 1.Get integer input function
 int inputInt(void);
@@ -31,3 +32,5 @@ void inputCString(char* word, int minChar, int maxChar);
 
 // 6.Display formatted phone number function
 void displayFormattedPhone(const char* strC);
+
+#endif // !CORE_H
