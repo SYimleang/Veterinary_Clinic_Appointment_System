@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23635F27-CDB8-4121-9C0C-9EF09C90722B}|VeterinaryClinicAppointmentSystem.vcxproj|C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23635F27-CDB8-4121-9C0C-9EF09C90722B}|VeterinaryClinicAppointmentSystem.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23635F27-CDB8-4121-9C0C-9EF09C90722B}|VeterinaryClinicAppointmentSystem.vcxproj|C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23635F27-CDB8-4121-9C0C-9EF09C90722B}|VeterinaryClinicAppointmentSystem.vcxproj|solutionrelative:core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23635F27-CDB8-4121-9C0C-9EF09C90722B}|VeterinaryClinicAppointmentSystem.vcxproj|C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\core.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23635F27-CDB8-4121-9C0C-9EF09C90722B}|VeterinaryClinicAppointmentSystem.vcxproj|solutionrelative:core.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "core.h",
+              "DocumentMoniker": "C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\core.h",
+              "RelativeDocumentMoniker": "core.h",
+              "ToolTip": "C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\core.h",
+              "RelativeToolTip": "core.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-19T20:50:43.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "core.c",
+              "DocumentMoniker": "C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\core.c",
+              "RelativeDocumentMoniker": "core.c",
+              "ToolTip": "C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\core.c",
+              "RelativeToolTip": "core.c",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-19T20:49:53.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\Frami\\OneDrive - Seneca\\Desktop\\Practice\\Veterinary_Clinic_Appointment_System\\VeterinaryClinicAppointmentSystem\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAAAN0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-19T20:47:33.269Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
