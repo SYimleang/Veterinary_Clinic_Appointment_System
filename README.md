@@ -2,7 +2,7 @@
 
 ## Description
 
-The Veterinary Clinic System is a comprehensive software solution designed to streamline the management of a veterinary clinic's patient data and appointment scheduling. This system allows veterinary clinics to efficiently manage their patient records, appointments, and appointments' schedules.
+The Veterinary Clinic System is a comprehensive software solution designed to streamline the management of a veterinary clinic's patient data and appointment scheduling. This system allows veterinary clinics to efficiently manage their patient records, appointments, and appointment schedules.
 
 ## Features
 
@@ -13,3 +13,6 @@ The Veterinary Clinic System is a comprehensive software solution designed to st
 - **Data Import/Export:** Import patient and appointment data from text files to quickly populate the system. Export data for backup and reporting.
 
 - **User-Friendly Interface:** A user-friendly interface makes it simple for clinic staff to use the system effectively.
+- 
+![PatientSystem](./img/programImg1.png)
+![AppointmentSystem](./img/programImg2.png)
