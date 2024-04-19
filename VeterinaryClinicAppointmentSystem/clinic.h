@@ -14,6 +14,11 @@
 #define PHONE_DESC_LEN 4
 #define PHONE_LEN 10
 
+// TIMEs
+#define TIME_START 10
+#define TIME_CLOSE 14
+#define TIME_INTERVAL 30
+
 
 //////////////////////////////////////
 // Structures
@@ -27,7 +32,6 @@ struct Phone
 };
 
 // Data type: Patient 
-// ToDo:
 struct Patient
 {
     int patientNumber;
@@ -36,11 +40,32 @@ struct Patient
 };
 
 // ClinicData type: Provided to student
-// !!! DO NOT MODIFY THIS DATA TYPE !!!
 struct ClinicData
 {
     struct Patient* patients;
     int maxPatient;
+    struct Appointment* appointments;
+    int maxAppointments;
+};
+
+// Data type: Time
+struct Time {
+    int hour;
+    int min;
+};
+
+// Data type: Date
+struct Date {
+    int year;
+    int month;
+    int day;
+};
+
+// Data type: Appointment
+struct Appointment {
+    int patientNumber;
+    struct Date date;
+    struct Time time;
 };
 
 //////////////////////////////////////
@@ -53,6 +78,11 @@ void displayPatientTableHeader(void);
 // Displays a single patient record in FMT_FORM | FMT_TABLE format
 void displayPatientData(const struct Patient* patient, int fmt);
 
+// Display's appointment schedule headers (date-specific or all records)
+void displayScheduleTableHeader(const struct Date* date, int isAllRecords);
+
+// Display a single appointment record with patient info. in tabular format
+void displayScheduleData(const struct Patient* patient, const struct Appointment* appoint, int includeDateField);
 
 //////////////////////////////////////
 // MENU & ITEM SELECTION FUNCTIONS
@@ -62,10 +92,13 @@ void displayPatientData(const struct Patient* patient, int fmt);
 void menuMain(struct ClinicData* data);
 
 // Menu: Patient Management
-void menuPatient(struct Patient patients[], int max);
+void menuPatient(struct Patient patient[], int max);
 
 // Menu: Patient edit
 void menuPatientEdit(struct Patient* patient);
+
+// Menu: Appointment Management
+void menuAppointment(struct ClinicData* data);
 
 // Display's all patient data in the FMT_FORM | FMT_TABLE format
 void displayAllPatients(const struct Patient patient[], int max, int fmt);
@@ -82,6 +115,21 @@ void editPatient(struct Patient patient[], int max);
 // Remove a patient record from the patient array
 void removePatient(struct Patient patient[], int max);
 
+//////////////////////////////////////
+// MANDATORY FUNCTIONS
+//////////////////////////////////////
+
+// View ALL scheduled appointments
+void viewAllAppointments(struct ClinicData* data);
+
+// View appointment schedule for the user input date
+void viewAppointmentSchedule(struct ClinicData* data);
+
+// Add an appointment record to the appointment array
+void addAppointment(struct Appointment* appoint, int maxAppoint, struct Patient* patient, int maxPatient);
+
+// Remove an appointment record from the appointment array
+void removeAppointment(struct Appointment* appoint, int maxAppoint, struct Patient* patient, int maxPatient);
 
 //////////////////////////////////////
 // UTILITY FUNCTIONS
@@ -97,8 +145,10 @@ void searchPatientByPhoneNumber(const struct Patient patient[], int max);
 int nextPatientNumber(const struct Patient patient[], int max);
 
 // Find the patient array index by patient number (returns -1 if not found)
-int findPatientIndexByPatientNum(int patientNumber,
-    const struct Patient patient[], int max);
+int findPatientIndexByPatientNum(int patientNumber, const struct Patient patient[], int max);
+
+// Sorting appointment data
+void sorting(struct Appointment* appoints, int maxAppoints);
 
 //////////////////////////////////////
 // USER INPUT FUNCTIONS
@@ -110,5 +160,14 @@ void inputPatient(struct Patient* patient);
 // Get user input for phone contact information
 void inputPhoneData(struct Phone* phone);
 
+//////////////////////////////////////
+// FILE FUNCTIONS
+//////////////////////////////////////
+
+// Import patient data from file into a Patient array (returns # of records read)
+int importPatients(const char* datafile, struct Patient patients[], int max);
+
+// Import appointment data from file into an Appointment array (returns # of records read)
+int importAppointments(const char* datafile, struct Appointment appoints[], int max);
 
 #endif // !CLINIC_H

@@ -152,7 +152,7 @@ void inputCString(char* word, const int minChar, const int maxChar)
 }
 
 // 6.Display formatted phone number function definition
-void displayFormattedPhone(const char strC[])
+void displayFormattedPhone(const char* strC)
 {
 	int i, j, length = 0;
 
@@ -185,5 +185,44 @@ void displayFormattedPhone(const char strC[])
 			printf("(___)___-____");
 		}
 	}
+	return;
+}
+
+// 7.Get number string input function
+void inputCStringNumber(char* word, const int numChar)
+{
+	int flag = 0;
+	char chInput = 'c';
+
+	do {
+		int len = 0;
+
+		while (chInput != '\n' && len <= numChar)		//get input from keyboard until found '\n'
+		{
+			chInput = getchar();
+			word[len] = chInput;
+			len++;
+		}
+
+		if (chInput == '\n' && len <= (numChar + 1))	//add '\0' to the end of the string if input less than numChar
+		{
+			len--;
+			word[len] = '\0';
+		}
+		else {
+			word[numChar] = '\0';						//add '\0' to the end to ignore input more than numChar
+			clearInputBuffer();							//clear input buffer which more than numChar
+		}
+
+		if (len != numChar)								//in case lenght of input is not equal numChar
+		{
+			printf("Invalid %d-digit number! Number: ", numChar);
+			chInput = 'a';
+		}
+		else											//in case length is equal to numChar
+		{
+			flag = 1;
+		}
+	} while (flag == 0);
 	return;
 }

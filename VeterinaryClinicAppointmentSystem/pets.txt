@@ -1,0 +1,5 @@
+Fluffy|cat|4
+Rupert|dog|2
+Wolf|doberman pinscher|6
+Bubbles|gold fish| 1
+Emmy|emu|9

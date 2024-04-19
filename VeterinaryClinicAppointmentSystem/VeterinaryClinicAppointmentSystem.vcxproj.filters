@@ -33,4 +33,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="patientData.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="pets.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="appointmentData.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="outputExample.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

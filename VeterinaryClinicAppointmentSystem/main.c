@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include "clinic.h"
 
-#define MAX_PETS 7
+#define MAX_PETS 20
+#define MAX_APPOINTMENTS 50
 
 int main(void)
 {
-    struct Patient pets[MAX_PETS] = {
-        {1024, "Shaggy Yanson", {"CELL","3048005191"} },
-        {1032, "Puglsey Yanson", {"CELL","3048005191"} },
-        {1040, "Beans Maulin", {"HOME","3649155831"} },
-        {1048, "Banjo Codi", {"TBA",{'\0'}} },
-        {1056, "Rover Davidov", {"WORK","7934346809"} }
-    };
-    struct ClinicData data = { pets, MAX_PETS };
+    struct Patient pets[MAX_PETS] = { {0} };
+    struct Appointment appoints[MAX_APPOINTMENTS] = { {0} };
+    struct ClinicData data = { pets, MAX_PETS, appoints, MAX_APPOINTMENTS };
 
-    // Entry point to the application logic:
+    int patientCount = importPatients("patientData.txt", pets, MAX_PETS);
+    int appointmentCount = importAppointments("appointmentData.txt", appoints, MAX_APPOINTMENTS);
+
+    printf("Imported %d patient records...\n", patientCount);
+    printf("Imported %d appointment records...\n\n", appointmentCount);
+
     menuMain(&data);
 
     return 0;

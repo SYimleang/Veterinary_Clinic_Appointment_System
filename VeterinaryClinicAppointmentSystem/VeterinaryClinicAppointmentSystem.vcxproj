@@ -135,6 +135,12 @@
     <ClInclude Include="clinic.h" />
     <ClInclude Include="core.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="appointmentData.txt" />
+    <Text Include="outputExample.txt" />
+    <Text Include="patientData.txt" />
+    <Text Include="pets.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

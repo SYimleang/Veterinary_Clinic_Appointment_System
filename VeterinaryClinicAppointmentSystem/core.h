@@ -33,4 +33,7 @@ void inputCString(char* word, int minChar, int maxChar);
 // 6.Display formatted phone number function
 void displayFormattedPhone(const char* strC);
 
+// 7.Get number string input function
+void inputCStringNumber(char* word, const int numChar);
+
 #endif // !CORE_H
